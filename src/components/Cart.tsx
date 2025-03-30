@@ -4,7 +4,7 @@ import { Trash2, Minus, Plus, AlertCircle, CheckCircle2, Loader2 } from 'lucide-
 import { useCartStore } from '../store/cartStore';
 
 const Cart = () => {
-  const { items, removeItem, updateQuantity, total, itemCount } = useCartStore();
+  const { items, removeItem, updateQuantity, total, itemCount, clearCart } = useCartStore();
   const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [notification, setNotification] = useState<{type: 'success' | 'error', message: string} | null>(null);
 
@@ -28,6 +28,9 @@ const Cart = () => {
     
     // Simulate a checkout process
     setTimeout(() => {
+      // Clear the cart
+      clearCart();
+      
       setCheckoutLoading(false);
       setNotification({
         type: 'success',

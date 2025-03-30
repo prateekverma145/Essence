@@ -92,6 +92,14 @@ Open [http://localhost:5173](http://localhost:5173) in your browser
 - `POST /api/reviews` - Add a new review
 - `POST /api/seed` - Seed the database with initial data
 
+## Screenshots
+[screenshot1](./assets/ss1.png)
+[screenshot2](./assets/ss2.png)
+[screenshot3](./assets/ss3.png)
+[screenshot4](./assets/ss4.png)
+[screenshot5](./assets/ss5.png)
+
+
 ## License
 
 [MIT License](LICENSE)
